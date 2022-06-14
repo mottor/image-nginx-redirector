@@ -1,4 +1,4 @@
-# docker-nginx-redirect
+# image-nginx-redirector
 
 A very simple container to redirect HTTP traffic to another server, based on `nginx`
 
