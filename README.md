@@ -4,7 +4,11 @@ A very simple container to redirect HTTP traffic to another server, based on `ng
 
 ## 1. Resources
 
-- [Docker Hub](https://hub.docker.com/r/mottor1/nginx-redirector)
+[Mottor Docker Hub](https://hub.docker.com/r/mottor1/nginx-redirector)
+
+Command to use:
+
+    docker pull mottor1/nginx-redirector
 
 ## 2. Configuration
 
@@ -44,6 +48,6 @@ With `docker-compose`
     
 With `docker`    
 
-    docker run -e SERVER_REDIRECT=www.example.com -p 8888:80 schmunk42/nginx-redirect
-    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -p 8888:80 schmunk42/nginx-redirect
-    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -e SERVER_REDIRECT_SCHEME=https -p 8888:80 schmunk42/nginx-redirect
+    docker run -e SERVER_REDIRECT=www.example.com -p 8888:80 mottor1/nginx-redirector
+    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -p 8888:80 mottor1/nginx-redirector
+    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -e SERVER_REDIRECT_SCHEME=https -p 8888:80 mottor1/nginx-redirector
