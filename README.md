@@ -2,11 +2,11 @@
 
 A very simple container to redirect HTTP traffic to another server, based on `nginx`
 
-## Resources
+## 1. Resources
 
-- [Docker Hub](https://hub.docker.com/r/schmunk42/nginx-redirect/)
+- [Docker Hub](https://hub.docker.com/r/mottor1/nginx-redirector)
 
-## Configuration
+## 2. Configuration
 
 ### Environment variables
 
@@ -36,7 +36,7 @@ A very simple container to redirect HTTP traffic to another server, based on `ng
 
 See also `docker-compose.yml` file.
 
-## Usage
+## 3. Usage
 
 With `docker-compose`
 
@@ -47,7 +47,3 @@ With `docker`
     docker run -e SERVER_REDIRECT=www.example.com -p 8888:80 schmunk42/nginx-redirect
     docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -p 8888:80 schmunk42/nginx-redirect
     docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -e SERVER_REDIRECT_SCHEME=https -p 8888:80 schmunk42/nginx-redirect
-
----
-
-Built by [dmstr](http://diemeisterei.de)
